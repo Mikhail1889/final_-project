@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Black'), url('./Roboto-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 956px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+header {
+    box-shadow: 3px 5px 2px 2px rgba(199, 201, 200, 0.25);
+}
+
+.header_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo__inscription {
+    padding: 5px 5px;
+    font-family: 'Roboto';
+    font-size: 22px;
+}
+
+.logo__inscription_bigger-size {
+    font-size: 32px;
+}
+
+.logo__inscription_green {
+    color: #57AD56;
+}
+
+.logo__inscription_bigger-weight {
+    font-weight: 500;
+}
+
+.logo__inscription_white {
+    color: white;
+}
+
+.other {
+    display: flex;
+    align-items: center;
+}
+
+.other a {
+    padding-top: 5px;
+}
+
+.other a:nth-child(1) {
+  color: #000000;
+  text-decoration: none; 
+  user-select: none;
+  background: #FFFFFF;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid;
+  font-family: 'Roboto';
+  transition-duration: 1s
+}
+
+.other a:nth-child(1):hover {
+    background: #E3E3E3; 
+    transition-duration: 1s;
+}
+
+.link {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90% auto;
+    height: 45px;
+    width: 50px;
+    transition: background-size 500ms;
+}
+
+.link:hover{
+    text-decoration: none;
+    outline: none;
+    color: #626262;
+    background-size: 75% auto;
+    transition: background-size 500ms;
+}
+
+.other a:nth-child(2) {
+    color: #262626;
+    background-image: url("icons/basket.svg");
+    display: inline-block;
+    margin: 0 10px;
+    width: 45px;
+}
+
+.search {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.search p {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    color: #626262;
+    margin: 0;
+}
+
+.line {
+    border-bottom: 1px solid #626262;
+    margin: 0;
+}
+
+.restaurants {
+    font-family: 'Roboto';
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.block {
+    width: 32%;
+}
+
+.photo > img {
+    width: 100%;
+}
+
+.name {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+}
+
+.type {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    font-weight: 300;
+    margin: 0;
+}
+
+.time {
+    font-family: Roboto;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+}
+
+.food {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.inscription p{
+    padding: 7px 0px;
+}
+
+.uber {
+    font-size: 32px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.eats {
+    color: #57AD56;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 32px;
+    padding-left: 10px;
+}
+
+footer {
+    margin-top: 100px;
+    background: #262626;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.settings {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0 40px 0;
+
+}
+
+.text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#hash {
+    color: #49A144;
+}
+
+.networks {
+    display: flex;
+}
+
+.networks a {
+    margin: 20px 5px 0 5px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.networks a:nth-child(1){
+    background-image: url("images/facebook.png");
+}
+
+.networks a:nth-child(2){
+    background-image: url("images/twitter.png");
+}
+
+.networks a:nth-child(3){
+    background-image: url("images/insta.png");
+}
+
+.lang {
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #3B3B3B;
+    width: 227px;
+    color: #FFFFFF;
+}
+
+.lang:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer_links {
+    color: white;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.footer_links:hover {
+    color: #b3b1b1;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.settings_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33%;
+}
+
+.settings_block .footer_links {
+    margin: 20px 0;
+}
+
+.download {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download a {
+    margin-right: 40px;
+}
+
+.download a:nth-child(1) {
+    background-image: url("images/google_store.png");
+}
+
+.download a:nth-child(2) {
+    background-image: url("images/app_store.png");
+}
+
+.end {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.end p {
+    width: 335px;
+    color: #FFFFFF;
+}
+
+option {
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 900px) {
+    .block,
+    .settings_block,
+    .end p{
+        width: 48%;
+        margin: 15px 0;
+    }    
+}
+
+@media screen and (max-width: 562px) {
+    .block{
+        width: 100%;
+    }    
+    .settings_block,
+    .end p{
+        width: 100%;
+        margin: 15px 0;
+    }
+}
